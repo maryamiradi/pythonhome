@@ -96,7 +96,7 @@ class Game:
         
         while True:
             self.show_table()
-            
+            git
             
             
             self.table.fill_user()
