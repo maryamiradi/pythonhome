@@ -61,7 +61,7 @@ class Game:
         x_button.pack(side='left', padx=30 , pady=30)
         o_button.pack(side='right', padx=30 , pady=30)
 
-        shape_window.wait_window(shape_window)  # Wait for the shape window to close
+        shape_window.wait_window(shape_window)  
         return self.selected_shape
 
 

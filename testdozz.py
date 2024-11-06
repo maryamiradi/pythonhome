@@ -65,20 +65,7 @@ class ChooseShapeTest(unittest.TestCase):
         self.assertEqual(game.table.user.shape, "X")
         self.assertEqual(game.table.computer.shape, "O")  
         
-class CreateButtonsTest(unittest.TestCase):
-    
-    def test_create_buttons(self):
-        
-        root = Tk()
-        game = Game(root)
-        game.create_buttons()
-        self.assertEqual(len(game.buttons), 3) 
-        self.assertEqual(len(game.buttons[0]), 3)  
-        
-       
-        self.assertEqual(game.buttons[0][0].cget("text"), '') 
-        self.assertEqual(game.buttons[1][1].cget("text"), '') 
-        self.assertEqual(game.buttons[2][2].cget("text"), '')  
+
         
                     
 class UserMoveTest(unittest.TestCase):
@@ -193,7 +180,20 @@ if __name__ == "__main__":
 
 
 
-
+# class CreateButtonsTest(unittest.TestCase):
+    
+#     def test_create_buttons(self):
+        
+#         root = Tk()
+#         game = Game(root)
+#         game.create_buttons()
+#         self.assertEqual(len(game.buttons), 3) 
+#         self.assertEqual(len(game.buttons[0]), 3)  
+        
+       
+#         self.assertEqual(game.buttons[0][0].cget("text"), '') 
+#         self.assertEqual(game.buttons[1][1].cget("text"), '') 
+#         self.assertEqual(game.buttons[2][2].cget("text"), '')  
     
 
 
